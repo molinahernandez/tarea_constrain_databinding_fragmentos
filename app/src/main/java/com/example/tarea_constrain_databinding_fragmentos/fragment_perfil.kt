@@ -1,0 +1,31 @@
+package com.example.tarea_constrain_databinding_fragmentos
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
+import com.example.tarea_constrain_databinding_fragmentos.databinding.FragmentPerfilBinding
+
+/**
+ * A simple [Fragment] subclass.
+ */
+class fragment_perfil : Fragment() {
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        var binding = DataBindingUtil.inflate<FragmentPerfilBinding>(inflater, R.layout.fragment_perfil,
+              container, false)
+
+        binding.button.setOnClickListener {
+            it.findNavController().navigate(R.id.action_fragment_perfil_to_pregunta3)
+        }
+
+        return binding.root
+    }
+
+}
