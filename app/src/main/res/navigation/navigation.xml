@@ -9,15 +9,6 @@
         android:id="@+id/fragment_perfil"
         android:name="com.example.tarea_constrain_databinding_fragmentos.fragment_perfil"
         android:label="fragment_perfil"
-        tools:layout="@layout/fragment_perfil">
-        <action
-            android:id="@+id/action_fragment_perfil_to_pregunta3"
-            app:destination="@id/pregunta3" />
-    </fragment>
-    <fragment
-        android:id="@+id/pregunta3"
-        android:name="com.example.tarea_constrain_databinding_fragmentos.pregunta"
-        android:label="fragment_pregunta"
-        tools:layout="@layout/fragment_pregunta" />
+        tools:layout="@layout/fragment_perfil"/>
 
 </navigation>
